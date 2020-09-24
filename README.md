@@ -9,9 +9,7 @@ This is designed for you to be able to automatically check and download for upda
 ## PREREQUISITES
 **Main Requirements**
 
-[GeyserMC](https://geysermc.org/)
-
-[Minecraft Java](https://www.minecraft.net/en-us/download/server)
+[GeyserMC](https://geysermc.org/), [Minecraft Java](https://www.minecraft.net/en-us/download/server)
 
 **On Linux**
 
