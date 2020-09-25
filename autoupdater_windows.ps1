@@ -54,9 +54,13 @@ echo "Downloading latest update..."
 $url = "https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar"
 $output = "$plugindir\$pluginfile"
 Invoke-WebRequest -Uri $url -OutFile $output
+if (!exist $plugindir\$pluginfile)) { 
+echo "Unable to update. Supposedly an internet connection was made unavailable, or an I/O error occurred."
+ } else {
 echo $updatever > $buildfile
 echo "Download complete."
 sleep 3
+}
 }
 
 <#
