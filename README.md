@@ -67,16 +67,18 @@ sleep 2
 echo Backing up...
 sleep 2
 mv $plugindir/$pluginfile $pluginfile.backup
-
 #downloads newest update
 echo Downloading latest update...
 wget -O $plugindir/$pluginfile https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
-
+if [! -f "$plugindir/$pluginfile" ] 
+then
+echo Unable to update. Supposedly an internet connection was made unavailable, or an I/O error occurred."\
+else
 echo $updatever > $buildfile
 echo Download complete.
 sleep 3
 fi
-
+fi
 ###ENTER ANYTHING ELSE YOU NEED TO START THE SERVER NORMALLY###
 
 ```
@@ -153,9 +155,13 @@ echo "Downloading latest update..."
 $url = "https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar"
 $output = "$plugindir\$pluginfile"
 Invoke-WebRequest -Uri $url -OutFile $output
+if (!exist $plugindir\$pluginfile)) { 
+echo "Unable to update. Supposedly an internet connection was made unavailable, or an I/O error occurred."
+ } else {
 echo $updatever > $buildfile
 echo "Download complete."
 sleep 3
+}
 }
 
 <#
