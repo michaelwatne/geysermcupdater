@@ -1,0 +1,1 @@
+{"DynamicInfo": {"updaterlsb": "1.0.2", "geyserlsb": "000"}, "GeyserMcInfo": {"version": "spigot", "location": "plugins/Geyser-Spigot.jar", "downloadfile": "Geyser-Spigot.jar"}, "ServerInfo": {"startup-script": "echo No startup script detected. Please add it to the gcmu.json file!", "prompt-before-autoupdater-update": "yes", "prompt-before-geyser-update": "yes"}}
