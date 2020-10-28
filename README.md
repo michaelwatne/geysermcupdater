@@ -10,6 +10,9 @@ This is designed for you to be able to automatically check and download for upda
 [GeyserMC](https://geysermc.org/), [Minecraft Java](https://www.minecraft.net/en-us/download/server)
 [Python 2.7.15](https://www.python.org/downloads/release/python-2715/)
 
+Gitpython Module for Python `pip2 install gitpython`
+Requests Module for Python `pip2 install requests`
+
 ## HOW TO USE
 
 1) Download the contents of the git repository to the root of your java-server folder
